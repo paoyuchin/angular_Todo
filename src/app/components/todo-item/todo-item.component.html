@@ -1,4 +1,4 @@
-  <li (click)="onToggle(todo)" class="li_content">
+  <li (click)="onToggle(todo)" [ngClass]="li_content()">
     <div [ngClass]="setCalsses()">
       <p class="item">{{ todo.title }}</p>
     </div>

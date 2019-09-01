@@ -24,6 +24,13 @@ export class TodoItemComponent implements OnInit {
     };
     return classes;
   }
+  li_content(){
+    let classes1 = {
+      li_content: true,
+      'done': this.todo.completed
+    };
+    return classes1;
+  }
   onToggle(todo){
     //toggle in UI
     todo.completed = !todo.completed

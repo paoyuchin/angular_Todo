@@ -19,11 +19,10 @@
 .is-complete {
   text-decoration: line-through;
   position: relative;
-
   &:before {
     content: '';
     position: absolute;
-    border-color: red;
+    border-color: white;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 25px;
@@ -34,17 +33,26 @@
   }
 }
 
+
+
 .item {
   padding-left: 26px;
 }
 
 
 .li_content {
+  cursor: pointer;
   display: flex;
   flex-direction: unset;
   justify-content: space-between;
   align-items: center;
   padding: 12px 8px 12px 40px;
+  &:hover{
+    background: #ddd;
+  }
+}
+.done{
+  background-color: #888 !important;
 }
 
 :host:nth-child(odd) {
