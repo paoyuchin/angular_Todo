@@ -1,0 +1,10 @@
+<div class="todos">
+  <div class="wrap">
+    <app-header></app-header>
+    <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+  </div>
+  <ul class="ulWrap">
+    <app-todo-item *ngFor='let todo of todos' [todo]='todo' (deleteTodo)="deleteTodo($event)">
+    </app-todo-item>
+  </ul>
+</div>
